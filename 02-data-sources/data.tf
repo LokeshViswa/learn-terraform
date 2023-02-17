@@ -10,19 +10,19 @@ output "ami" {
 
 
 
-#
-#output "public_ip" {
-#  value = data.aws_instance.foo.public_ip
-#}
-#
-#output "private_ip" {
-#  value = data.aws_instance.foo.private_ip
-#}
-#
-#data "aws_instance" "foo" {
-#  instance_id = "i-0d5fc7fb99c768588"
-#}
-#
-#provider "aws" {
-#  region = "us-east-1"
-#}
+
+output "public_ip" {
+  value = data.aws_instance.foo.public_ip
+}
+
+output "private_ip" {
+  value = data.aws_instance.foo.private_ip
+}
+
+data "aws_instance" "foo" {
+  instance_id = "i-01f3f39bbedf195e0"
+}
+
+provider "aws" {
+  region = "us-east-1"
+}
