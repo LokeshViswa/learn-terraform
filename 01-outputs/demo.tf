@@ -1,7 +1,7 @@
-output "demo" {
+ output "demo" {
   value = "Hello World"
 }
 
 output "demo1" {
-  value = "Hello World"
+  value = "Why Not"
 }
